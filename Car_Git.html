@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>MYLOGO.COM</h1>
+<hr>
+
+<h2>Example Careers</h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+    <img src="https://www.animationxpress.com/wp-content/uploads/2022/06/1_7E1KMdaYm86rJOvCU9vMIw.jpeg" alt="Animator" style="width:100%">
+      <h3>Animator</h3>
+      <p>
+      Growth*: 4.1%
+      <br>
+      <br> 
+      Medain Salary*: $77,700
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://blog.edqart.com/wp-content/uploads/2018/12/Broadcast-735x400.jpg" 
+    alt="Broadcast Technician" style="width:100%">
+      <h3>Broadcast Technician</h3>
+      <p>
+      Growth*: 3.1%
+      <br>
+      <br>
+      Median Salary*: $43,570
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://www.ziprecruiter.com/svc/fotomat/public-ziprecruiter/cms/1129405939SeniorSystemsAdministrator.jpg" alt="Computer Network Analyst" style="width:100%">
+      <h3>Computer Network Analyst</h3>
+      <p>Growth*: 5%
+      <br>
+      <br> 
+      Medain Salary*: $116,780
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="https://www.usnews.com/object/image/0000016b-e1d5-d947-a56f-f1dd0e4d0000/computerscienceprofessional.jpg?update-time=1562862880129&size=responsive970" alt="Computer Scientist" style="width:100%">
+      <h3>Computer Scientist</h3>
+      <p>
+      Growth*: 15.4%
+      <br>
+      <br>
+      Median Salary*: $126,830
+      </p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="content">
+    <img src="https://extension.harvard.edu/wp-content/uploads/sites/8/2020/10/web-developer.jpg" alt="Corporate Web Developer" style="width:100%">
+      <h3>Corporate Web Developer</h3>
+      <p>
+      Growth*: 5.7%
+      <br>
+      <br> 
+      Medain Salary*: $92,870
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://ueestatic.fullerton.edu/static/CP/gis/images/gis.jpg" alt="GIS Technician" style="width:100%">
+      <h3>Geographic Information Systems Technician (GIS Technician)</h3>
+      <p>
+      Growth*: 5.7%
+      <br>
+      <br>
+      Median Salary*: $92,870
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://tms-outsource.com/blog/wp-content/uploads/2020/06/project-manager-header.jpg" alt="IT Project Manager" style="width:100%">
+      <h3>IT Project Manager</h3>
+      <p>
+      Growth*: 5.7%
+      <br>
+      <br>
+      Median Salary*: $92,870
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://i.ytimg.com/vi/9yRA8K0pY1Y/maxresdefault.jpg" alt="Sound Recording Engineer" style="width:100%">
+      <h3>Sound Recording Engineer</h3>
+      <p>
+      Growth*: 6%
+      <br>
+      <br>
+      Median Salary*: $53,520
+      </p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="content">
+    <img src="https://www.neit.edu/wp-content/uploads/2022/10/video-game-developer-team-brainstorming-1-1024x683.jpeg" alt="Video Game Designer" style="width:100%">
+      <h3>Video Game Designer</h3>
+      <p>
+      Growth*: 0%
+      <br>
+      <br>
+      Median Salary*: $0
+      </p>
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>

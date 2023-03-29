@@ -1,0 +1,22 @@
+body, html {
+    height: 100%;
+    background-color: white;
+}
+
+.artParallax {
+    height: 100%;
+    background-image: url(artCon.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.desginParallax {
+    height: 100%;
+    background-image: url(desCon.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Captsone :: Home </title>
+		<link rel="stylesheet" href="format.css">
+		<link rel="icon" type="image/x-icon" href="tabLogo.png">
+	</head>
+
+	<body>
+		<script src="functions.js"></script>
+		<div id="wrapper">
+		<header>
+			<h1><a href="index.html">digital culture</a></h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="LearnMore.html">Learn More</a></li>
+				<li><a href="Simulation.html">Student Life</a></li>
+				<li><a href="faculty.html">Faculty</a></li>
+				<li><a href="index.html">Home</a></li>
+        <li><a href="Testimonies.html">Testimonals</a></li>
+
+			</ul>
+		</nav>
+
+    <div class="test"></div>
+        <p>My Google Maps </p>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+
+              const directionsRenderer = new google.maps.DirectionsRenderer();
+              const directionsService = new google.maps.DirectionsService();
+              var stauffer= {lat: 33.419891, lng: -111.937134};
+              var dwntwn = {lat: 33.453430, lng:-112.073227};
+              var polyTech = {lat: 33.307999, lng:-111.67719};
+
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: stauffer
+              });
+
+              var marker1 = new google.maps.Marker({
+                position: stauffer,
+                map: map
+              });
+
+              var marker2 = new google.maps.Marker({
+                position: dwntwn,
+                map: map
+              });
+
+              var marker3 = new google.maps.Marker({
+                position: polyTech,
+                map: map
+              });
+
+              directionsRenderer.setMap(map);
+              directionsRenderer.setPanel(document.getElementById("sidebar"));
+
+              const control = document.getElementById("floating-panel");
+
+              map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
+
+              const onChangeHandler = function () {
+                calculateAndDisplayRoute(directionsService, directionsRenderer);
+              };
+
+              document
+                .getElementById("start")
+                .addEventListener("change", onChangeHandler);
+              document
+                .getElementById("end")
+                .addEventListener("change", onChangeHandler);
+              document
+                .getElementById("mode")
+                .addEventListener("change", onChangeHandler);
+              }
+
+            function calculateAndDisplayRoute(directionsService, directionsRenderer) {
+              const start = document.getElementById("start").value;
+              const end = document.getElementById("end").value;
+              const selectedMode = document.getElementById("mode").value;
+
+              directionsService
+                .route({
+                  origin: start,
+                  destination: end,
+                  travelMode: google.maps.TravelMode[selectedMode],
+                })
+                .then((response) => {
+                  directionsRenderer.setDirections(response);
+                })
+                .catch((e) =>
+                  window.alert("Directions request failed due to " + status)
+                );
+
+              }
+              window.initMap = initMap;
+                          
+        </script>
+        
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBweN4Mb7v4h0LvKKj-KzvR0-h55ZN5P9U&callback=initMap"
+          src="https://maps.googleapis.com/maps/api/directions/outputFormat&key=AIzaSyCZMee9-lh2RlPdrFyO31OzVhASwVhHKTQ&callback=initMap">
+        </script>
+        </div>
+    </body>
+</html>

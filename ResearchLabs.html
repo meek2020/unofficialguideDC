@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Captsone :: Home </title>
+    <link rel="stylesheet" href="ConcentrationsStyle.css">
+    <link rel="icon" type="image/x-icon" href="tabLogo.png"></head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+.mySlides {display:none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+ @-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+ 
+</style>
+</head>
+<body>
+
+<div class="main">
+<header>
+    <h1><a href="index.html">digital culture</a></h1>
+</header>
+
+<div id="nav">
+    <ul>
+                <li><a href="LearnMore.html">Showcase</a></li>
+                <li><a href="Simulation.html">Cool Toys</a></li>
+                <li><a href="faculty.html">Your Future</a></li>
+                <li><a href="index.html">Who We Are</a></li>
+                <li><a href="Testimonies.html">Testimonals</a></li>
+    </ul>
+</div>
+
+<h1>Research Labs</h1>
+
+<h2 style="text-align:center">Synthesis Center</h2>
+<div id="slideshow1" class="slideshow-container">
+
+	<div class="mySlides fade">
+  		<img src="img_nature_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_fjords_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_mountains_wide.jpg" style="width:100%">
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1,slideshow1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+
+<br>
+
+    <div style="text-align:center">
+  		<span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
+  		<span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
+  		<span class="dot" onclick="currentSlide(3, slideshow1)"></span> 
+	</div>
+</div>
+
+<p style="margin:30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget pharetra nisl. Vestibulum tempor, neque in facilisis convallis, risus odio commodo nibh, nec fringilla neque eros nec magna. Vestibulum at tellus sed erat ultrices commodo sed non risus. Etiam et purus et lacus bibendum 		varius mollis bibendum enim. Suspendisse potenti. Quisque eleifend rutrum dolor, eu hendrerit magna luctus et. In hac habitasse platea dictumst. Sed nisi ante, volutpat ut egestas sit amet, varius vitae odio. Ut vel risus mattis, lobortis felis cursus, lacinia mi. Donec ultricies, massa at ultricies fermentum, neque nibh rhoncus arcu, sodales malesuada risus lacus in nunc. Vivamus pellentesque quam eu nibh consequat venenatis. Suspendisse potenti.</p>
+
+
+<br><br><br>
+
+<h2 style="text-align:center">Acoustic Ecology</h2>
+<div id="slideshow2" class="slideshow-container">
+
+	<div class="mySlides fade">
+  		<img src="img_nature_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_fjords_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_mountains_wide.jpg" style="width:100%">
+	</div>
+
+	<br>
+
+	<a class="prev" onclick="plusSlides(-1,slideshow2)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1, slideshow2)">&#10095;</a>
+
+
+	<div style="text-align:center">
+  		<span class="dot" onclick="currentSlide(1, slideshow2)"></span> 
+  		<span class="dot" onclick="currentSlide(2, slideshow2)"></span> 
+  		<span class="dot" onclick="currentSlide(3, slideshow2)"></span> 
+	</div>
+</div>
+    
+<p style="margin:30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget pharetra nisl. Vestibulum tempor, neque in facilisis convallis, risus odio commodo nibh, nec fringilla neque eros nec magna. Vestibulum at tellus sed erat ultrices commodo sed non risus. Etiam et purus et lacus bibendum varius mollis bibendum enim. Suspendisse potenti. Quisque eleifend rutrum dolor, eu hendrerit magna luctus et. In hac habitasse platea dictumst. Sed nisi ante, volutpat ut egestas sit amet, varius vitae odio. Ut vel risus mattis, lobortis felis cursus, lacinia mi. Donec ultricies, massa at ultricies fermentum, neque nibh rhoncus arcu, sodales malesuada risus lacus in nunc. Vivamus pellentesque quam eu nibh consequat venenatis. Suspendisse potenti.</p>   
+
+<br><br><br>
+
+<h2 style="text-align:center">Social and Digital Systems Group (SANDS)</h2>
+<div id="slideshow3" class="slideshow-container">
+
+	<div class="mySlides fade">
+  		<img src="img_nature_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_fjords_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_mountains_wide.jpg" style="width:100%">
+	</div>
+
+	<br>
+
+	<a class="prev" onclick="plusSlides(-1,slideshow3)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1, slideshow3)">&#10095;</a>
+
+
+	<div style="text-align:center">
+  		<span class="dot" onclick="currentSlide(1, slideshow3)"></span> 
+  		<span class="dot" onclick="currentSlide(2, slideshow3)"></span> 
+  		<span class="dot" onclick="currentSlide(3, slideshow3)"></span> 
+	</div>
+</div>
+
+<p style="margin:30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget pharetra nisl. Vestibulum tempor, neque in facilisis convallis, risus odio commodo nibh, nec fringilla neque eros nec magna. Vestibulum at tellus sed erat ultrices commodo sed non risus. Etiam et purus et lacus bibendum varius mollis bibendum enim. Suspendisse potenti. Quisque eleifend rutrum dolor, eu hendrerit magna luctus et. In hac habitasse platea dictumst. Sed nisi ante, volutpat ut egestas sit amet, varius vitae odio. Ut vel risus mattis, lobortis felis cursus, lacinia mi. Donec ultricies, massa at ultricies fermentum, neque nibh rhoncus arcu, sodales malesuada risus lacus in nunc. Vivamus pellentesque quam eu nibh consequat venenatis. Suspendisse potenti.</p>   
+
+
+<br><br><br>
+
+<h2 style="text-align:center">The Imaging Lyceum</h2>
+<div id="slideshow4" class="slideshow-container">
+
+	<div class="mySlides fade">
+  		<img src="img_nature_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_fjords_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_mountains_wide.jpg" style="width:100%">
+	</div>
+
+	<br>
+
+	<a class="prev" onclick="plusSlides(-1,slideshow4)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1, slideshow4)">&#10095;</a>
+
+
+	<div style="text-align:center">
+  		<span class="dot" onclick="currentSlide(1, slideshow4)"></span> 
+  		<span class="dot" onclick="currentSlide(2, slideshow4)"></span> 
+  		<span class="dot" onclick="currentSlide(3, slideshow4)"></span> 
+	</div>
+</div>  
+  
+<p style="margin:30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget pharetra nisl. Vestibulum tempor, neque in facilisis convallis, risus odio commodo nibh, nec fringilla neque eros nec magna. Vestibulum at tellus sed erat ultrices commodo sed non risus. Etiam et purus et lacus bibendum varius mollis bibendum enim. Suspendisse potenti. Quisque eleifend rutrum dolor, eu hendrerit magna luctus et. In hac habitasse platea dictumst. Sed nisi ante, volutpat ut egestas sit amet, varius vitae odio. Ut vel risus mattis, lobortis felis cursus, lacinia mi. Donec ultricies, massa at ultricies fermentum, neque nibh rhoncus arcu, sodales malesuada risus lacus in nunc. Vivamus pellentesque quam eu nibh consequat venenatis. Suspendisse potenti.</p>
+
+
+<br><br><br>
+
+<h2 style="text-align:center">Resilient Visions CoLab</h2>
+<div id="slideshow5" class="slideshow-container">
+
+	<div class="mySlides fade">
+  		<img src="img_nature_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_fjords_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_mountains_wide.jpg" style="width:100%">
+	</div>
+
+	<br>
+
+	<a class="prev" onclick="plusSlides(-1,slideshow5)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1, slideshow5)">&#10095;</a>
+
+
+	<div style="text-align:center">
+  		<span class="dot" onclick="currentSlide(1, slideshow5)"></span> 
+  		<span class="dot" onclick="currentSlide(2, slideshow5)"></span> 
+  		<span class="dot" onclick="currentSlide(3, slideshow5)"></span> 
+	</div>
+</div>
+
+<p style="margin:30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget pharetra nisl. Vestibulum tempor, neque in facilisis convallis, risus odio commodo nibh, nec fringilla neque eros nec magna. Vestibulum at tellus sed erat ultrices commodo sed non risus. Etiam et purus et lacus bibendum varius mollis bibendum enim. Suspendisse potenti. Quisque eleifend rutrum dolor, eu hendrerit magna luctus et. In hac habitasse platea dictumst. Sed nisi ante, volutpat ut egestas sit amet, varius vitae odio. Ut vel risus mattis, lobortis felis cursus, lacinia mi. Donec ultricies, massa at ultricies fermentum, neque nibh rhoncus arcu, sodales malesuada risus lacus in nunc. Vivamus pellentesque quam eu nibh consequat venenatis. Suspendisse potenti.</p>
+
+
+<br><br><br>
+
+<h2 style="text-align:center">PARIESA (Practice and Research in Enactive Sonic Art)</h2>
+<div id="slideshow6" class="slideshow-container">
+
+	<div class="mySlides fade">
+  		<img src="img_nature_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_fjords_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_mountains_wide.jpg" style="width:100%">
+	</div>
+
+	<br>
+
+	<a class="prev" onclick="plusSlides(-1,slideshow6)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1, slideshow6)">&#10095;</a>
+
+
+	<div style="text-align:center">
+  		<span class="dot" onclick="currentSlide(1, slideshow6)"></span> 
+  		<span class="dot" onclick="currentSlide(2, slideshow6)"></span> 
+  		<span class="dot" onclick="currentSlide(3, slideshow6)"></span> 
+	</div>
+</div>
+
+<p style="margin:30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget pharetra nisl. Vestibulum tempor, neque in facilisis convallis, risus odio commodo nibh, nec fringilla neque eros nec magna. Vestibulum at tellus sed erat ultrices commodo sed non risus. Etiam et purus et lacus bibendum varius mollis bibendum enim. Suspendisse potenti. Quisque eleifend rutrum dolor, eu hendrerit magna luctus et. In hac habitasse platea dictumst. Sed nisi ante, volutpat ut egestas sit amet, varius vitae odio. Ut vel risus mattis, lobortis felis cursus, lacinia mi. Donec ultricies, massa at ultricies fermentum, neque nibh rhoncus arcu, sodales malesuada risus lacus in nunc. Vivamus pellentesque quam eu nibh consequat venenatis. Suspendisse potenti.</p>
+
+
+<br><br><br>
+
+<h2 style="text-align:center">Meteor Studio</h2>
+<div id="slideshow7" class="slideshow-container">
+
+	<div class="mySlides fade">
+  		<img src="img_nature_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_fjords_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_mountains_wide.jpg" style="width:100%">
+	</div>
+
+	<br>
+
+	<a class="prev" onclick="plusSlides(-1,slideshow7)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1, slideshow7)">&#10095;</a>
+
+
+	<div style="text-align:center">
+  		<span class="dot" onclick="currentSlide(1, slideshow7)"></span> 
+  		<span class="dot" onclick="currentSlide(2, slideshow7)"></span> 
+  		<span class="dot" onclick="currentSlide(3, slideshow7)"></span> 
+	</div>
+</div>    
+<p style="margin:30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget pharetra nisl. Vestibulum tempor, neque in facilisis convallis, risus odio commodo nibh, nec fringilla neque eros nec magna. Vestibulum at tellus sed erat ultrices commodo sed non risus. Etiam et purus et lacus bibendum varius mollis bibendum enim. Suspendisse potenti. Quisque eleifend rutrum dolor, eu hendrerit magna luctus et. In hac habitasse platea dictumst. Sed nisi ante, volutpat ut egestas sit amet, varius vitae odio. Ut vel risus mattis, lobortis felis cursus, lacinia mi. Donec ultricies, massa at ultricies fermentum, neque nibh rhoncus arcu, sodales malesuada risus lacus in nunc. Vivamus pellentesque quam eu nibh consequat venenatis. Suspendisse potenti.</p>
+
+
+<br><br><br>
+
+<h2 style="text-align:center">Geometric Media Lab</h2>
+<div id="slideshow8" class="slideshow-container">
+
+	<div class="mySlides fade">
+  		<img src="img_nature_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_fjords_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_mountains_wide.jpg" style="width:100%">
+	</div>
+
+	<br>
+
+	<a class="prev" onclick="plusSlides(-1,slideshow8)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1, slideshow8)">&#10095;</a>
+
+
+	<div style="text-align:center">
+  		<span class="dot" onclick="currentSlide(1, slideshow8)"></span> 
+  		<span class="dot" onclick="currentSlide(2, slideshow8)"></span> 
+  		<span class="dot" onclick="currentSlide(3, slideshow8)"></span> 
+	</div>
+</div>
+
+<p style="margin:30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget pharetra nisl. Vestibulum tempor, neque in facilisis convallis, risus odio commodo nibh, nec fringilla neque eros nec magna. Vestibulum at tellus sed erat ultrices commodo sed non risus. Etiam et purus et lacus bibendum varius mollis bibendum enim. Suspendisse potenti. Quisque eleifend rutrum dolor, eu hendrerit magna luctus et. In hac habitasse platea dictumst. Sed nisi ante, volutpat ut egestas sit amet, varius vitae odio. Ut vel risus mattis, lobortis felis cursus, lacinia mi. Donec ultricies, massa at ultricies fermentum, neque nibh rhoncus arcu, sodales malesuada risus lacus in nunc. Vivamus pellentesque quam eu nibh consequat venenatis. Suspendisse potenti.</p>
+
+<br><br><br>
+
+<h2 style="text-align:center">The SHaDe Lab</h2>
+<div id="slideshow9" class="slideshow-container">
+
+	<div class="mySlides fade">
+  		<img src="img_nature_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_fjords_wide.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+  		<img src="img_mountains_wide.jpg" style="width:100%">
+	</div>
+
+	<br>
+
+	<a class="prev" onclick="plusSlides(-1,slideshow9)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1, slideshow9)">&#10095;</a>
+
+	<div style="text-align:center">
+  		<span class="dot" onclick="currentSlide(1, slideshow9)"></span> 
+  		<span class="dot" onclick="currentSlide(2, slideshow9)"></span> 
+  		<span class="dot" onclick="currentSlide(3, slideshow9)"></span> 
+	</div>
+</div>
+
+<p style="margin:30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget pharetra nisl. Vestibulum tempor, neque in facilisis convallis, risus odio commodo nibh, nec fringilla neque eros nec magna. Vestibulum at tellus sed erat ultrices commodo sed non risus. Etiam et purus et lacus bibendum varius mollis bibendum enim. Suspendisse potenti. Quisque eleifend rutrum dolor, eu hendrerit magna luctus et. In hac habitasse platea dictumst. Sed nisi ante, volutpat ut egestas sit amet, varius vitae odio. Ut vel risus mattis, lobortis felis cursus, lacinia mi. Donec ultricies, massa at ultricies fermentum, neque nibh rhoncus arcu, sodales malesuada risus lacus in nunc. Vivamus pellentesque quam eu nibh consequat venenatis. Suspendisse potenti.</p>
+
+<br><br><br>
+
+<script>
+/*Variables to use the slideshows in the functions*/
+var slideshow1 = document.getElementById("slideshow1");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+var slideshow2 = document.getElementById("slideshow2");
+slideshow2.currentSlideIndex = 1;
+showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+var slideshow3 = document.getElementById("slideshow3");
+slideshow3.currentSlideIndex = 1;
+showSlides(slideshow3.currentSlideIndex, slideshow3);
+
+var slideshow4 = document.getElementById("slideshow4");
+slideshow4.currentSlideIndex = 1;
+showSlides(slideshow4.currentSlideIndex, slideshow4);
+
+var slideshow5 = document.getElementById("slideshow5");
+slideshow5.currentSlideIndex = 1;
+showSlides(slideshow5.currentSlideIndex, slideshow5);
+
+var slideshow6 = document.getElementById("slideshow6");
+slideshow6.currentSlideIndex = 1;
+showSlides(slideshow6.currentSlideIndex, slideshow6);
+
+var slideshow7 = document.getElementById("slideshow7");
+slideshow7.currentSlideIndex = 1;
+showSlides(slideshow7.currentSlideIndex, slideshow7);
+
+var slideshow8 = document.getElementById("slideshow8");
+slideshow8.currentSlideIndex = 1;
+showSlides(slideshow8.currentSlideIndex, slideshow8);
+
+var slideshow9 = document.getElementById("slideshow9");
+slideshow9.currentSlideIndex = 1;
+showSlides(slideshow9.currentSlideIndex, slideshow9);
+
+/*function to move the slide forward and to find current slide*/
+function plusSlides(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex += n, slideshow);
+}
+
+function currentSlide(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex = n, slideshow);
+}
+
+/*function that changes the slides using the dots and arrows*/
+function showSlides(n, slideshow) {
+  
+  var i;
+  var slides = slideshow.getElementsByClassName("mySlides");
+  var dots = slideshow.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+  if (n < 1) {slideshow.currentSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow.currentSlideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 

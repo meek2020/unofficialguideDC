@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>MYLOGO.COM</h1>
+<hr>
+
+<h2>Example Careers</h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+    <img src="https://blog.edqart.com/wp-content/uploads/2018/12/Broadcast-735x400.jpg" 
+    alt="Broadcast Technician" style="width:100%">
+      <h3>Broadcast Technician</h3>
+      <p>
+      Growth*: 3.1%
+      <br>
+      <br>
+      Median Salary*: $43,570
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://nupaths.org/wp-content/uploads/sites/16/2021/09/What-Does-a-Network-Technician-Do.jpg" alt="Computer Network Technician" style="width:100%">
+      <h3>Computer Network Technician</h3>
+      <p>
+      Growth*: 6.4%
+      <br>
+      <br>
+      Median Salary*: $65,450
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+     <img src="https://extension.harvard.edu/wp-content/uploads/sites/8/2020/10/web-developer.jpg" alt="Corporate Web Developer" style="width:100%">
+      <h3>Corporate Web Developer</h3>
+      <p>
+      Growth*: 5.7%
+      <br>
+      <br> 
+      Medain Salary*: $92,870
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/46612/article_aligned%402x.jpg" alt="Executive Producer" style="width:100%">
+      <h3>Executive Producer</h3>
+      <p>
+      Growth*: 10%
+      <br>
+      <br>
+      Median Salary*: $76,400
+      </p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="content">
+    <img src="https://tms-outsource.com/blog/wp-content/uploads/2020/06/project-manager-header.jpg" alt="IT Project Manager" style="width:100%">
+      <h3>IT Project Manager</h3>
+      <p>
+      Growth*: 5.7%
+      <br>
+      <br>
+      Median Salary*: $92,870
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://www.ziprecruiter.com/svc/fotomat/public-ziprecruiter/cms/488577452ProductionSpecialist.jpg" alt="Production Assistant" style="width:100%">
+      <h3>Production Assistant</h3>
+      <p>
+      Growth*: 8.1%
+      <br>
+      <br>
+      Median Salary*: $49,730
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://www.dga.org/-/media/Images/DGA-Magazine-Article-Images/July-2004/CraftReality.ashx?la=en&hash=007E0F7848FEA23B4366325655E9737CD659AF3D" alt="TV Program Director" style="width:100%">
+      <h3>TV Program Director</h3>
+      <p>
+      Growth*: 10%
+      <br>
+      <br>
+      Median Salary*: $76,400
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://i0.wp.com/artdepartmental.com/wp-content/uploads/2098/07/2457_fpf_00048r-embed_4.jpg?fit=960%2C541&ssl=1" alt="TV/Movie Set Designer" style="width:100%">
+      <h3>TV/Movie Set Designer</h3>
+      <p>
+      Growth*: 1.2%
+      <br>
+      <br>
+      Median Salary*: $58,180
+      </p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="content">
+    <img src="https://www.neit.edu/wp-content/uploads/2022/10/video-game-developer-team-brainstorming-1-1024x683.jpeg" alt="Video Game Designer" style="width:100%">
+      <h3>Video Game Designer</h3>
+      <p>
+      Growth*: 0%
+      <br>
+      <br>
+      Median Salary*: $0
+      </p>
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>

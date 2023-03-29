@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create five equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+@font-face {
+    font-family: myFamilyFont;
+    src: url(Orbitronio.ttf);
+}
+
+header { 
+    background-color: #283845; 
+    color: #98B0A3;
+    text-align: center;
+    height: 130px;
+    font-family: myFamilyFont;
+    font-size: 50px;
+    letter-spacing: 0.1em;
+    border-radius: 5px 5px 5px 5px;
+    border-color: #BAA177;
+}
+
+
+header a { text-decoration: none;}
+header a:visited {color:#98B0A3;}
+header a:hover { color: white}
+
+nav a { text-decoration: none;}
+nav a:visited {color:#98B0A3;}
+nav a:hover {color: white;}
+nav li:hover {background-color: #283845;}
+
+nav { 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+    outline: 2px green;
+}
+
+nav li {
+    margin-top: 0em;
+    background-color: white;
+    width: 250px;
+    height: 100px;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    display: inline-block;
+    line-height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+    padding: 1px 1px;
+    list-style: none;
+    text-align: center;
+    outline-color: #283845;
+}
+
+p {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<header>
+  <h1><a href="index.html">digital culture</a></h1>
+</header>
+
+  <div id="nav">
+    <ul>
+        <li><a href="LearnMore.html">Showcase</a></li>
+        <li><a href="Simulation.html">Cool Toys</a></li>
+        <li><a href="faculty.html">Your Future</a></li>
+        <li><a href="index.html">Who We Are</a></li>
+        <li><a href="Testimonies.html">Testimonals</a></li>
+    </ul>
+  </div>
+  
+<h1>Faculty</h1>
+<hr>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="fac1.png" alt="Diana" style="width:100%">
+      <p>
+      Diana Ayton-Shenker 
+      <br>
+      Professor of Practice (FSC) 
+      <br>
+      <a href="url">diana.ayton-shenker@asu.edu</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="fac2.png" alt="Laura" style="width:100%">
+      <p>
+      Laura Cechanowicz 
+      <br>
+      Assistant Professor  
+      <br>
+      <a href="url">laura.cechanowicz@asu.edu</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="fac3.png" alt="Caecilia" style="width:100%">
+      <p>
+      Caecilia Charbonnier
+      <br>
+      Professor of Practice 
+      <br>
+      <a href="url">caecilia.charbonnier@asu.edu</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="fac4.png" alt="Pooyan" style="width:100%">
+      <p>
+      Pooyan Fazil
+      <br>
+      Assistant Professor  
+      <br>
+      <a href="url">pooyan@asu.edu</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="fac5.png" alt="Ed" style="width:100%">
+      <p>
+      Ed Finn
+      <br>
+      Center Director & Asst Professor  
+      <br>
+      <a href="url">edfinn@asu.edu</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+<!-- END ROW -->
+</div>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="fac6.png" alt="Lauren" style="width:100%">
+      <p>
+      Lauren Hayes
+      <br>
+      ASsociate Professor  
+      <br>
+      <a href="url">lauren.s.hayes@asu.edu</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="fac7.png" alt="Ana" style="width:100%">
+      <p>
+      Ana Herruzo
+      <br>
+      Associate Professor  
+      <br>
+      <a href="url">ana.herruzo@asu.edu</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="fac8.png" alt="Todd" style="width:100%">
+      <p>
+      Todd Ingalls
+      <br>
+      Associate Director & Research Prof 
+      <br>
+      <a href="url">testcase@asu.edu</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="fac9.png" alt="Suren" style="width:100%">
+      <p>
+      Suren Jayasuriya 
+      <br>
+      Assistant Professor  
+      <br>
+      <a href="url">sjayasur@asu.edu</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="fac10.png" alt="Stacey" style="width:100%">
+      <p>
+      Stacey K
+      <br>
+      Assistant Professor  
+      <br>
+      <a href="url">kstace@asu.edu</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+<!-- END ROW -->
+</div>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://pluspng.com/img-png/png-face-profile--700.png" alt="PFP" style="width:100%">
+      <p>
+      John Smith 
+      <br>
+      Professor  
+      <br>
+      (123)456-7890
+      <br>
+      <a href="url">Email</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://pluspng.com/img-png/png-face-profile--700.png" alt="PFP" style="width:100%">
+      <p>
+      John Smith 
+      <br>
+      Professor  
+      <br>
+      (123)456-7890
+      <br>
+      <a href="url">Email</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://pluspng.com/img-png/png-face-profile--700.png" alt="PFP" style="width:100%">
+      <p>
+      John Smith 
+      <br>
+      Professor  
+      <br>
+      (123)456-7890
+      <br>
+      <a href="url">Email</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://pluspng.com/img-png/png-face-profile--700.png" alt="PFP" style="width:100%">
+      <p>
+      John Smith 
+      <br>
+      Professor  
+      <br>
+      (123)456-7890
+      <br>
+      <a href="url">Email</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://pluspng.com/img-png/png-face-profile--700.png" alt="PFP" style="width:100%">
+      <p>
+      John Smith 
+      <br>
+      Professor  
+      <br>
+      (123)456-7890
+      <br>
+      <a href="url">Email</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+<!-- END ROW -->
+</div>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://pluspng.com/img-png/png-face-profile--700.png" alt="PFP" style="width:100%">
+      <p>
+      John Smith 
+      <br>
+      Professor  
+      <br>
+      (123)456-7890
+      <br>
+      <a href="url">Email</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://pluspng.com/img-png/png-face-profile--700.png" alt="PFP" style="width:100%">
+      <p>
+      John Smith 
+      <br>
+      Professor  
+      <br>
+      (123)456-7890
+      <br>
+      <a href="url">Email</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://pluspng.com/img-png/png-face-profile--700.png" alt="PFP" style="width:100%">
+      <p>
+      John Smith 
+      <br>
+      Professor  
+      <br>
+      (123)456-7890
+      <br>
+      <a href="url">Email</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://pluspng.com/img-png/png-face-profile--700.png" alt="PFP" style="width:100%">
+      <p>
+      John Smith 
+      <br>
+      Professor  
+      <br>
+      (123)456-7890
+      <br>
+      <a href="url">Email</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://pluspng.com/img-png/png-face-profile--700.png" alt="PFP" style="width:100%">
+      <p>
+      John Smith 
+      <br>
+      Professor  
+      <br>
+      (123)456-7890
+      <br>
+      <a href="url">Email</a> | <a href="url">Profile</a>
+      </p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+
+</body>
+</html>

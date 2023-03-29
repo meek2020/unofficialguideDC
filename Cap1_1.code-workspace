@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../CIS 300"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Capstone 1"
+	}
+}
